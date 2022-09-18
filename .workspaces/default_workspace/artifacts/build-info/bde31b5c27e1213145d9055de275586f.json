@@ -1,0 +1,414 @@
+{
+	"id": "bde31b5c27e1213145d9055de275586f",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"FeeCollector.sol": {
+				"content": "pragma solidity ^0.8.7;\r\n// SPDX-License-Identifier: MIT\r\n\r\ncontract FeeCollector{\r\n\r\n    address  owner;\r\n\r\n\r\n    constructor() {\r\n\r\n    }\r\n\r\n\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"FeeCollector.sol": {
+				"FeeCollector": {
+					"abi": [
+						{
+							"inputs": [],
+							"stateMutability": "nonpayable",
+							"type": "constructor"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"FeeCollector.sol\":60:148  contract FeeCollector{\r... */\n  mstore(0x40, 0x80)\n    /* \"FeeCollector.sol\":115:139  constructor() {\r... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n    /* \"FeeCollector.sol\":60:148  contract FeeCollector{\r... */\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"FeeCollector.sol\":60:148  contract FeeCollector{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212204c82fbc1de1011d69cdcf19ff60022d8e041ae5d9b5468bad179520fb0f38ddc64736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {
+								"@_7": {
+									"entryPoint": null,
+									"id": 7,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204c82fbc1de1011d69cdcf19ff60022d8e041ae5d9b5468bad179520fb0f38ddc64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x4C DUP3 0xFB 0xC1 0xDE LT GT 0xD6 SWAP13 0xDC CALL SWAP16 0xF6 STOP 0x22 0xD8 0xE0 COINBASE 0xAE 0x5D SWAP12 SLOAD PUSH9 0xBAD179520FB0F38DDC PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "60:88:0:-:0;;;115:24;;;;;;;;;;60:88;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212204c82fbc1de1011d69cdcf19ff60022d8e041ae5d9b5468bad179520fb0f38ddc64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x4C DUP3 0xFB 0xC1 0xDE LT GT 0xD6 SWAP13 0xDC CALL SWAP16 0xF6 STOP 0x22 0xD8 0xE0 COINBASE 0xAE 0x5D SWAP12 SLOAD PUSH9 0xBAD179520FB0F38DDC PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "60:88:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 115,
+									"end": 139,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 148,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212204c82fbc1de1011d69cdcf19ff60022d8e041ae5d9b5468bad179520fb0f38ddc64736f6c63430008070033",
+									".code": [
+										{
+											"begin": 60,
+											"end": 148,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 60,
+											"end": 148,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 60,
+											"end": 148,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 60,
+											"end": 148,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 60,
+											"end": 148,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 60,
+											"end": 148,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"FeeCollector.sol\":\"FeeCollector\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"FeeCollector.sol\":{\"keccak256\":\"0x37811c121164388250ffb28f306924c668b0fa5c475fdd116b4615b12744ac91\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b924c2bf1f73dd2ad679b1461e2c7d1e1ae00aadf7cef90d4b1787b75e791680\",\"dweb:/ipfs/QmYhNnRGhMG3JSnfwiBcxKUnrvi3n6GMEvc9Rw3YhBNATe\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "FeeCollector.sol:FeeCollector",
+								"label": "owner",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_address"
+							}
+						],
+						"types": {
+							"t_address": {
+								"encoding": "inplace",
+								"label": "address",
+								"numberOfBytes": "20"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"FeeCollector.sol": {
+				"ast": {
+					"absolutePath": "FeeCollector.sol",
+					"exportedSymbols": {
+						"FeeCollector": [
+							8
+						]
+					},
+					"id": 9,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 8,
+							"linearizedBaseContracts": [
+								8
+							],
+							"name": "FeeCollector",
+							"nameLocation": "69:12:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "owner",
+									"nameLocation": "99:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "90:14:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "90:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 6,
+										"nodeType": "Block",
+										"src": "129:10:0",
+										"statements": []
+									},
+									"id": 7,
+									"implemented": true,
+									"kind": "constructor",
+									"modifiers": [],
+									"name": "",
+									"nameLocation": "-1:-1:-1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 4,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "126:2:0"
+									},
+									"returnParameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "129:0:0"
+									},
+									"scope": 8,
+									"src": "115:24:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "public"
+								}
+							],
+							"scope": 9,
+							"src": "60:88:0",
+							"usedErrors": []
+						}
+					],
+					"src": "0:148:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
